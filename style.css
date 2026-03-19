@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menubar{
+	background: #293b6f;  
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+		}
+.menudiv{
+	display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+		}
+
+
+.logo a{
+	font-size: 25px; 
+   
+    letter-spacing: 2px;
+    font-style: italic;
+    color: white;
+		}
+.menudiv li{
+	list-style: none; 
+    display: inline-block;
+    margin-left: 15px; 
+     margin-right: 10px;
+}
+.menudiv li a{
+	color: white; 
+    background-color: #2ae957; 
+    font-size: 16px;  
+    padding: 10px 20px;       
+    border-radius: 8px;
+}
+
+
+.menudiv li a:hover {
+    background-color: #1bb161; 
+}
+
+
+button a{
+	color: white; 
+    font-weight: bold; 
+    font-size: 15px;
+}
+
+
+
+
+
+body{
+    background-image: url("Flooded street amid storm and debris.png"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height:100vh;
+}
+
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+
+
+
+.content{
+    width: 90%;
+    max-width: 400px;
+    margin:60px auto;
+    padding:25px;
+    border-radius:12px;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(6px);
+
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+
+    
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #edeeee;
+    padding: 20px 45px 20px 20px;
+}
+
+h1,h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    background:#0056b3;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003f82;
+}
+
+
+a{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    color:#eaeee5;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+table{
+    width:90%;
+    margin:40px auto;
+    border-collapse:collapse;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(5px);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+table th{
+    background:#0056b3;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+
+.center-page {
+    color: white;
+}
+
+
+.actions button{
+    background:red;
+    width:auto;
+    padding:6px 12px;
+}
+
+.actions button:hover{
+    background:darkred;
+}
+.hero img{
+    width:5%;
+    max-width:400px;
+}
+.image-center {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 80vh;              
+}
+
+.image-center img {
+    max-width: 600px;         
+    width: 100%;
+    border-radius: 8px;
+}
+.text-center-box {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 30vh;              
+    text-align: center;
+}
+
+.flood {
+    max-width: 700px;          
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;             
+}
+
+
+.btn {
+    display: flex;
+    gap: 15px; 
+    margin-top: 15px; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    
+    .menudiv {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menudiv li {
+        display: block;    
+        margin-bottom: 10px;
+    }
+
+    .logo a {
+        font-size: 28px;
+    }
+
+    .content {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        min-width: 600px;
+        margin: 10px 0;
+    }
+    .table_mobile {
+    width: 100%;
+    overflow-x: auto; 
+    margin-bottom: 20px;
+    }
+    .flood {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
