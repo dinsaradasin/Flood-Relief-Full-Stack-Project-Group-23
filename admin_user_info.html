@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>User Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menubar">
+		<div class="menudiv">
+			<div class="logo"><a>User Details</a> </div>
+			<ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Logout</a></li>
+			</ul>
+</div>
+</div>
+
+<div class="content">
+    
+ <input type="text" name="user_id" placeholder="User ID" >
+    <button type="button" onclick="viewAllDetails()">View</button>
+
+</div>
+
+
+<table id="user_table">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>NIC</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+<div class="table_mobile">
+    <table id="req_table">
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Relief Type</th>
+                <th>District</th>
+                <th>Divisional Secretariat</th>
+                <th>GN Division</th>
+                <th>Contact Name</th>
+                <th>Contact Number</th>
+                <th>Address</th>
+                <th>Family Members</th>
+                <th>Flood Severity</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+<script src="admin_user_info.js"></script>
+</body>
+</html>

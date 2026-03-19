@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="menubar">
+		<div class="menudiv">
+			<div class="logo"><a>System Summary</a> </div>
+			<ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Logout</a></li>
+	
+    
+			</ul>
+        </div>
+    </div>
+<div class="content">
+    <form>
+        <select required>
+            <option>Select District</option>
+            <option>Colombo</option>
+            <option>Gampaha</option>
+            <option>Kalutara</option>
+            <option>Matara</option>
+            <option>Galle</option>
+            <option>Hambanthota</option>
+            <option>Rathnapura</option>
+            <option>Kegalle</option>
+            <option>monaragala</option>
+            <option>Badulla</option>
+            <option>Trinco</option>
+            <option>Batticaloa</option>
+            <option>Ampara</option>
+            <option>Kandy</option>
+            <option>Matale</option>
+            <option>Nuwara Eliya</option>
+            <option>Anuradhapura</option>
+            <option>Polonnaruwa</option>
+            <option>Kurunagala</option>
+            <option>Puththalama</option>
+            <option>Jaffna</option>
+            <option>Kilinochchi</option>
+            <option>Mulathivu</option>
+            <option>Mannar</option>
+             <option>Vavuniya</option>
+             
+        </select>
+
+        <select required>
+            <option>Relief Type</option>
+            <option>Food</option>
+            <option>Water</option>
+            <option>Medicine</option>
+            <option>Shelter</option>
+        </select>
+        
+          <select required>
+
+            <option value="">Flood Severity</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+
+        </select>
+
+
+        <button type="button" onclick="get_summary()">Search</button>
+    </form>
+
+<div id="status">
+    
+</div>
+
+</div>
+<div class="table_mobile">
+    <table id="req_table">
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Relief Type</th>
+                <th>District</th>
+                <th>Divisional Secretariat</th>
+                <th>GN Division</th>
+                <th>Contact Name</th>
+                <th>Contact Number</th>
+                <th>Address</th>
+                <th>Family Members</th>
+                <th>Flood Severity</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+    </table>
+</div>
+<script src="admin_summary.js"></script>
+</body>
+</html>
+
+
+
+
+

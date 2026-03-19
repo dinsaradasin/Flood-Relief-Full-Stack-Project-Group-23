@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Update / Delete User</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="menubar">
+		<div class="menudiv">
+			<div class="logo"><a>Delete Relief Request</a> </div>
+			<ul>
+				<li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Logout</a></li>
+                
+	
+    
+			</ul>
+        </div>
+</div>
+
+
+<div class="content">
+
+
+     <form id="requestForm">
+       <input type="text" name="req_id" placeholder="Request_ID" required>
+       <input type="text" name="user_id" placeholder="User_ID" required>
+        
+
+        <div class="btn">
+            <button type="button" class="btn_del" onclick="deleteRecord()">Delete</button>
+        </div>
+    </form>
+    
+</div>
+
+
+   
+        
+              
+
+    <script src="admin_user_del.js"></script>
+
+</body>
+</html>
